@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Planner | Moses Ndubuisi Moore</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Moses.Dev</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" class="active">Academic Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Academic Task Management System</h1>
+    <p style="margin-bottom: 1rem;">Organize assignments, readings, and project deadlines efficiently.</p>
+
+    <!-- Visual Instructions Box for Lecturers/Users -->
+    <div style="background-color: #e0f2fe; border-left: 4px solid #2563eb; padding: 1rem; margin-bottom: 1.5rem; border-radius: 4px; color: #1e40af;">
+      <strong>How to use this planner:</strong>
+      <ul style="margin-left: 1.5rem; margin-top: 0.5rem;">
+        <li><strong>Add Task:</strong> Type a task into the box below and click <em>Add Task</em> (or press Enter).</li>
+        <li><strong>Mark Complete:</strong> Click directly on any task's text to mark it as completed (strikethrough).</li>
+        <li><strong>Delete Task:</strong> Click the red <em>Delete</em> button next to any task to remove it.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <div class="planner-input">
+        <input type="text" id="taskInput" placeholder="Enter task (e.g., Complete COS 106 Project)..." style="flex: 1;">
+        <button id="addTaskBtn" class="btn">Add Task</button>
+      </div>
+
+      <ul id="taskList" class="task-list">
+        <!-- Dynamic Tasks via JS -->
+      </ul>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Moses Ndubuisi Moore | MIVA Open University. All Rights Reserved.</p>
+  </footer>
+
+  <script src="planner.js"></script>
+</body>
+</html>
